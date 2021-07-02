@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>Studio</li>
+                    <li>Den-duslar</li>
+                    <li>Media</li>
+                    <li>Ulanyjylar</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="circle-box">
+            <svg height="402" width="402">
+                <circle r="200" cx="201" cy="201" stroke-width="1px" stroke="gray" fill="none"></circle>
+            </svg>
+            <svg height="402" width="402">
+                <circle r="200" cx="201" cy="201" stroke-width="1px" stroke="#fff" fill="none" id="svgCircle"></circle>
+            </svg>
+            <div>
+                <span id="step1"></span>
+                <span id="step2"></span>
+                <span id="step3"></span>
+                <span id="step4"></span>
+                <span id="step5"></span>
+            </div>
+            <div class="user-box" id="userBox">
+                <div class="user">
+                    <img src="img/person-1.jpg" alt="">
+                    <h1>Carl Perry</h1>
+                    <p>Easy tutorial you tube kanalyna agza bolun we tazeliklerden habarly bolmak ucin asakdakylara
+                        basyn</p>
+                    <div class="social-links">
+                        <img src="img/facebook.png" alt="">
+                        <img src="img/instagram.png" alt="">
+                        <img src="img/twitter.png" alt="">
+                        <img src="img/linkedin.png" alt="">
+
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="img/person-2.jpg" alt="">
+                    <h1>Carl Perry</h1>
+                    <p>Easy tutorial you tube kanalyna agza bolun we tazeliklerden habarly bolmak ucin asakdakylara
+                        basyn</p>
+                    <div class="social-links">
+                        <img src="img/facebook.png" alt="">
+                        <img src="img/instagram.png" alt="">
+                        <img src="img/twitter.png" alt="">
+                        <img src="img/linkedin.png" alt="">
+
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="img/person-3.jpg" alt="">
+                    <h1>Carl Perry</h1>
+                    <p>Easy tutorial you tube kanalyna agza bolun we tazeliklerden habarly bolmak ucin asakdakylara
+                        basyn</p>
+                    <div class="social-links">
+                        <img src="img/facebook.png" alt="">
+                        <img src="img/instagram.png" alt="">
+                        <img src="img/twitter.png" alt="">
+                        <img src="img/linkedin.png" alt="">
+
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="img/person-4.jpg" alt="">
+                    <h1>Carl Perry</h1>
+                    <p>Easy tutorial you tube kanalyna agza bolun we tazeliklerden habarly bolmak ucin asakdakylara basyn</p>
+                    <div class="social-links">
+                        <img src="img/facebook.png" alt="">
+                        <img src="img/instagram.png" alt="">
+                        <img src="img/twitter.png" alt="">
+                        <img src="img/linkedin.png" alt="">
+                        
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="img/person-5.jpg" alt="">
+                    <h1>Carl Perry</h1>
+                    <p>Easy tutorial you tube kanalyna agza bolun we tazeliklerden habarly bolmak ucin asakdakylara basyn</p>
+                    <div class="social-links">
+                        <img src="img/facebook.png" alt="">
+                        <img src="img/instagram.png" alt="">
+                        <img src="img/twitter.png" alt="">
+                        <img src="img/linkedin.png" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var svgCircle = document.getElementById("svgCircle");
+        var step1 = document.getElementById("step1");
+        var step2 = document.getElementById("step2");
+        var step3 = document.getElementById("step3");
+        var step4 = document.getElementById("step4");
+        var step5 = document.getElementById("step5");
+        var main = document.getElementById("main");
+        var userBox = document.getElementById("userBox");
+        main.style.backgroundImage = "url(img/img-1.jpg)";
+
+        step1.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "1004";
+            main.style.backgroundImage = "url(img/img-1.jpg)";
+            userBox.style.top = "-350px";
+        })
+        step2.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "753";
+            main.style.backgroundImage = "url(img/img-2.jpg)";
+            userBox.style.top = "-800px";
+        })
+        step3.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "502";
+            main.style.backgroundImage = "url(img/img-3.jpg)";
+            userBox.style.top = "-1250px";
+        })
+        step4.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "251";
+            main.style.backgroundImage = "url(img/img-4.jpg)";
+            userBox.style.top = "-1700px";
+        })
+        step5.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "0";
+            main.style.backgroundImage = "url(img/img-5.jpg)";
+            userBox.style.top = "100px";
+        })
+    </script>
+</body>
+
+</html>
